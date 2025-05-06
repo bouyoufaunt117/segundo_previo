@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barman y Cócteles</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <nav>
+    <button onclick="mostrarSeccion('barman')">Barman</button>
+    <button onclick="mostrarSeccion('cocteles')">Cócteles</button>
+    <button onclick="mostrarSeccion('ingredientes')">Ingredientes</button>
+  </nav>
+
+  <section id="barman" class="contenido">
+    <div class="barman-info">
+      <img id="barman-imagen" src="/img/hombre.png" alt="Barman" />
+      <div>
+        <h2 id="nombre-barman"></h2>
+        <p id="email"></p>
+        <p id="fecha"></p>
+        <p id="celular"></p>
+      </div>
+    </div>
+
+    <div class="barman-info">
+        <img id="barman-imagen" src="/img/mujer.png" alt="Barman" />
+        <div>
+          <h2 id="nombre-barman"></h2>
+          <p id="email"></p>
+          <p id="fecha"></p>
+          <p id="celular"></p>
+        </div>
+      </div>
+
+    <h3>Cócteles recomendados</h3>
+    <div id="cocteles-inicio" class="cocteles"></div>
+  </section>
+
+  <section id="cocteles" class="contenido" style="display:none;">
+    <div id="cocteles-container" class="cocteles"></div>
+  </section>
+
+  <section id="ingredientes" class="contenido" style="display:none;">
+    <p>En construcción</p>
+  </section>
+
+  <footer>
+    <div class="footer-imagen izquierda">
+      <img src="/img/ufps.png" alt="UFPS">
+      <span>UFPS</span>
+    </div>
+    
+    <div class="footer-texto">
+      <p>Estudiante: Gabriel Chinome Ramírez</p>
+      <p>Código: 1152193</p>
+      <p>Asignatura: Laboratorio de Programación</p>
+    </div>
+    
+    <div class="footer-imagen derecha">
+      <img src="/img/sistemas.png" alt="Ingeniería de Sistemas">
+      <span>Ingeniería de Sistemas</span>
+    </div>
+  </footer>
+  
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
